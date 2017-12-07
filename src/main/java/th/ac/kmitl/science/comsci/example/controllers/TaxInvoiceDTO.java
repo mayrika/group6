@@ -1,4 +1,4 @@
-package jpa;
+package arbitrary_files;
 
 import java.util.HashMap;
 
@@ -10,8 +10,7 @@ public class TaxInvoiceDTO
     private String customerName;
     private String customerPhoneNumber;
     private String customerEmail;
-    private HashMap <String, Double> PoSNameAndPrice; //PoS : Product or Service
-    private HashMap <String, Integer> PoSNameAndAmount;
+    private HashMap <String, double[]> PoSNameAmountPrice;
     private double totalPrice;
 
     public String getCustomerCompanyName() {
@@ -62,20 +61,12 @@ public class TaxInvoiceDTO
         this.customerEmail = customerEmail;
     }
 
-    public HashMap<String, Double> getPoSNameAndPrice() {
-        return PoSNameAndPrice;
+    public HashMap<String, double[]> getPoSNameAmountPrice() {
+        return PoSNameAmountPrice;
     }
 
-    public void setPoSNameAndPrice(HashMap<String, Double> PoSNameAndPrice) {
-        this.PoSNameAndPrice = PoSNameAndPrice;
-    }
-
-    public HashMap<String, Integer> getPoSNameAndAmount() {
-        return PoSNameAndAmount;
-    }
-
-    public void setPoSNameAndAmount(HashMap<String, Integer> PoSNameAndAmount) {
-        this.PoSNameAndAmount = PoSNameAndAmount;
+    public void setPoSNameAmountPrice(HashMap<String, double[]> PoSNameAmountPrice) {
+        this.PoSNameAmountPrice = PoSNameAmountPrice;
     }
 
     public double getTotalPrice() {
@@ -85,5 +76,6 @@ public class TaxInvoiceDTO
     public void setTotalPrice(double totalPrice) {
         this.totalPrice = totalPrice;
     }
+
     
 }
