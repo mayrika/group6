@@ -7,7 +7,6 @@ public class TestAddressDTO {
 
     @Test
     public void inputDataToAddressDTO() {
-
         AddressDTO addressDTO = new AddressDTO();
 
         String postCode = "10330";
