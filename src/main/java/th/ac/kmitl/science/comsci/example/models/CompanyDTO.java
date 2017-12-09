@@ -1,6 +1,6 @@
 package th.ac.kmitl.science.comsci.example.models;
 
-public class PersonalDTO {
+public class CompanyDTO {
 
     private String id;
     private String globalId;
