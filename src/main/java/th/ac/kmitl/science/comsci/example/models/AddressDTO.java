@@ -16,7 +16,6 @@ public class AddressDTO {
     private int countryId;
     private int countrySubDivisionId;
     
-
     public String getPostCode() {
         return postCode;
     }
