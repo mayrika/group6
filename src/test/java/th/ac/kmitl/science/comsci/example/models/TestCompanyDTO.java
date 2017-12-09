@@ -8,7 +8,7 @@ public class TestCompanyDTO {
     @Test
     public void inputDataToCompanyDTO() {
 
-        CompanyDTO companyDTO = new CompanyDTO();
+        CompanyDTO companyDTO = new CompanyDTO() {} ;
 
         String id = "14781";
         String globalId = "G1245597734";
